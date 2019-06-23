@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><p:profile xmlns:p="http://xml.hm1.org/schema/ApplicantProfileSchema"><p:cv><p:name>khaled shuang</p:name><p:age>25</p:age><p:tel>46739911555</p:tel><p:email>myemail@domain.com</p:email><p:address>
+        Kista Galleria
+        Stockholm</p:address><p:qualifications><p:skill>C++</p:skill><p:skill>C#</p:skill><p:skill>Java</p:skill></p:qualifications></p:cv><p:education><p:eduItem><p:degree>engineering</p:degree><p:school>the royal institute of technology</p:school><p:enrollDate>2014-01-01</p:enrollDate><p:graduationDate>2011-05-05</p:graduationDate><p:GPA>2.5</p:GPA></p:eduItem></p:education><p:career><p:careerItem><p:company><p:companyName>Volvo</p:companyName><p:companyLocation>
+            Kista
+            Stockholm
+        </p:companyLocation><p:companyTel>46739911555</p:companyTel><p:position>Programmer</p:position><p:startDate>2012-01-10</p:startDate><p:endDate>2017-01-10</p:endDate><p:description>-</p:description></p:company></p:careerItem><p:careerItem><p:company><p:companyName>MathWorks</p:companyName><p:companyLocation>
+            Kista
+            Stockholm
+        </p:companyLocation><p:companyTel>46739911555</p:companyTel><p:position>Engineer</p:position><p:startDate>2011-01-10</p:startDate><p:endDate>2012-01-10</p:endDate><p:description>-</p:description></p:company></p:careerItem></p:career><p:letter>
+        Hi there, I’m Smith. I am a Consultant Front-end Architect, designer,
+        developer, writer and speaker from the UK.
+    </p:letter><p:preference><p:desirePlace>Stockholm</p:desirePlace><p:jobType>Permanent</p:jobType></p:preference></p:profile>

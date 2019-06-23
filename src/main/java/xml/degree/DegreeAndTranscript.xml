@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : DegreeAndTranscriptSchema.xml
+    Created on : January 28, 2017, 2:05 PM
+    Author     : khaled
+    Description:
+        Purpose of the document follows.
+-->
+
+<dt:degreeAndTranscript  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+                         xmlns:dt='http://xml.hm1.org/schema/DegreeAndTranscript'
+                         xsi:schemaLocation='http://xml.hm1.org/schema/DegreeAndTranscript DegreeAndTranscriptSchema.xsd'>
+    
+    <dt:fullStudentName>khaled shuang</dt:fullStudentName>
+    <dt:personalId>19990101-1111</dt:personalId>
+    <dt:gender>male</dt:gender>
+    <dt:school>the royal institute of technology</dt:school>
+    <dt:faculty>engineering</dt:faculty>
+    <dt:address>
+        Kista Galleria
+        Stockholm
+    </dt:address>
+    <dt:phone>46739911555</dt:phone>
+    <dt:emailAddress>myemail@domain.com</dt:emailAddress>
+    <dt:graduationDate>2011-05-05</dt:graduationDate>
+    <dt:academicCourses>
+        <dt:courseType>Mandatory</dt:courseType>
+        <dt:course>
+            <dt:name>Concurrent Programming</dt:name>
+            <dt:code>ID1111</dt:code>
+            <dt:period>1</dt:period>
+            <dt:mark>95</dt:mark>
+            <dt:date>2010-01-10</dt:date>
+            <dt:credit>7.5</dt:credit>
+        </dt:course>
+        <dt:course>
+            <dt:name>Algorithms and Data Structure</dt:name>
+            <dt:code>ID7777</dt:code>
+            <dt:period>3</dt:period>
+            <dt:mark>85</dt:mark>
+            <dt:date>2011-01-10</dt:date>
+            <dt:credit>7.5</dt:credit>
+        </dt:course>
+    </dt:academicCourses>
+    <dt:academicCourses>
+        <dt:courseType>Elective</dt:courseType>
+        <dt:course>
+            <dt:name>Math 2</dt:name>
+            <dt:code>ID5555</dt:code>
+            <dt:period>2</dt:period>
+            <dt:mark>55</dt:mark>
+            <dt:date>2010-05-10</dt:date>
+            <dt:credit>6</dt:credit>
+        </dt:course>
+    </dt:academicCourses>
+
+</dt:degreeAndTranscript>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created by Shuang Qiu -->
+<p:profile  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+              xmlns:p='http://xml.hm1.org/schema/ApplicantProfileSchema'
+              xsi:schemaLocation='http://xml.hm1.org/schema/ApplicantProfileSchema ../profile/ApplicationProfileSchema.xsd'>
+	<!-- cv -->
+	<p:cv>
+		<p:name>xxx</p:name>
+		<p:age>01</p:age>
+		<p:tel>999999999</p:tel>
+		<p:email>xxx@xxx.xxx</p:email>
+		<p:address>xxx, xxx, xxxxxxx</p:address>
+		<p:qualifications>
+			<p:skill>C, C++, Java, SQL</p:skill>
+			<p:skill>English</p:skill>
+		</p:qualifications>
+	</p:cv>
+
+	<!-- relevant academic degree(s) -->
+	<p:education>
+		<p:eduItem>
+			<p:degree>xxx</p:degree>
+			<p:school>KTH</p:school>
+			<p:enrollDate>2010-06-01</p:enrollDate>
+			<p:graduationDate>2014-08-01</p:graduationDate>
+			<p:GPA>84</p:GPA>
+		</p:eduItem>
+	</p:education>
+
+	<!-- previous working experience -->
+	<p:career>
+		<p:careerItem>
+			<p:company>
+				<p:companyName>xxx</p:companyName>
+				<p:companyLocation>Stockholm</p:companyLocation>
+				<p:companyTel>999-999-999</p:companyTel>
+			</p:company>
+			<p:position>xxxx</p:position>
+			<p:startDate>2016-01-01</p:startDate>
+			<p:endDate>2017-01-01</p:endDate>
+			<p:description>xxxxxxxxxxxx</p:description>
+		</p:careerItem>
+	</p:career>
+
+	<!-- Motivation letter -->
+	<p:letter>
+		xxxx,xxxxx xxx xx xxxxx xxxxxx.
+	</p:letter>
+
+	<!-- Preference -->
+	<p:preference>
+		<p:desirePlace>Stockholm</p:desirePlace>
+		<p:jobType>permanent</p:jobType>
+	</p:preference>
+
+</p:profile>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><courseList>
+<course>
+<courseName>Concurrent Programming</courseName>
+<mark>95</mark>
+<credit>7.5</credit>
+<totalGrades>30</totalGrades>
+</course>
+<course>
+<courseName>Algorithms and Data Structure</courseName>
+<mark>85</mark>
+<credit>7.5</credit>
+<totalGrades>22.5</totalGrades>
+</course>
+<course>
+<courseName>Math 2</courseName>
+<mark>55</mark>
+<credit>6</credit>
+<totalGrades>0</totalGrades>
+</course>
+</courseList>

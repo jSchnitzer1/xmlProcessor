@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : CompanyInfoSchema.xml
+    Created on : January 28, 2017, 3:13 PM
+    Author     : khaled
+    Description:
+        Purpose of the document follows.
+-->
+
+<c:companyInfo  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+                  xmlns:c='http://xml.hm1.org/schema/CompanyInfoSchema'
+                  xsi:schemaLocation='http://xml.hm1.org/schema/CompanyInfoSchema CompanyInfoSchema.xsd'>
+    
+    <c:company>
+        <c:name>MathWorks</c:name>
+        <c:role>Engineering</c:role>
+        <c:address>
+            Kista
+            Stockholm
+        </c:address>
+        <c:phone>46739911555</c:phone>
+    </c:company>
+    <c:company>
+        <c:name>Volvo</c:name>
+        <c:role>Car Manufacturing</c:role>
+        <c:address>
+            Kista
+            Stockholm
+        </c:address>
+        <c:phone>46739911555</c:phone>
+    </c:company>
+</c:companyInfo>

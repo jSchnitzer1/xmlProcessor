@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.hm1.org/schema/DegreeAndTranscript"
+            xmlns:tns="http://xml.hm1.org/schema/DegreeAndTranscriptSchema" elementFormDefault="qualified">
+    
+    <xsd:element name="degreeAndTranscript">
+        <xsd:complexType>
+            <xsd:sequence>
+                
+                <xsd:element name="fullStudentName">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="1" />
+                            <xsd:maxLength value="50" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="personalId">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="[0-9]{8}-[0-9]{4}" /><!-- it can be also \d{8}-\d{4} -->
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="gender">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="male|female"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="school" type="xsd:string" />
+                
+                <xsd:element name="faculty" type="xsd:string" />
+                
+                <xsd:element name="address">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="phone">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="\d+" /> <!-- nonNegativeInteger can be used also -->
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="emailAddress">
+                    <xsd:simpleType> 
+                        <xsd:restriction base="xsd:string"> 
+                            <xsd:pattern value="[^@]+@[^\.]+\..+"/> 
+                        </xsd:restriction> 
+                    </xsd:simpleType>    
+                </xsd:element>
+
+                
+                <xsd:element name="graduationDate" type="xsd:date" />
+                
+                <xsd:element name="academicCourses" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="courseType">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="Mandatory|Elective|Optional"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="course" minOccurs="0" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string" />
+
+                                        <xsd:element name="code">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:pattern value="[B-K]{2}\d{4}" />
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+
+                                        <xsd:element name="period">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:integer">
+                                                    <xsd:minInclusive value="1" />
+                                                    <xsd:maxInclusive value="4" />
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+
+                                        <xsd:element name="mark">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:integer">
+                                                    <xsd:minInclusive value="1" />
+                                                    <xsd:maxInclusive value="6" />
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    
+                                        <xsd:element name="date" type="xsd:date" />
+                                        <xsd:element name="credit">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:float">
+                                                    <xsd:minInclusive value="1" />
+                                                    <xsd:maxInclusive value="10" />
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

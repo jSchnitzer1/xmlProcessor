@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : EmploymentRecordSchema.xml
+    Created on : January 28, 2017, 2:58 PM
+    Author     : khaled
+    Description:
+        Purpose of the document follows.
+-->
+
+<emp:employmentRecord  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+                       xmlns:emp='http://xml.hm1.org/schema/EmploymentRecordSchema'
+                       xsi:schemaLocation='http://xml.hm1.org/schema/EmploymentRecordSchema EmploymentRecordSchema.xsd'>
+    
+    <emp:fullEmployeeName>khaled shuang</emp:fullEmployeeName>
+    <emp:personalId>19990101-1111</emp:personalId>
+    <emp:gender>male</emp:gender>
+    <emp:age>25</emp:age>
+    <emp:address>
+        Kista Galleria
+        Stockholm
+    </emp:address>
+    <emp:phone>46739911555</emp:phone>
+    <emp:emailAddress>myemail@domain.com</emp:emailAddress>
+    <emp:employer>
+        <emp:employerName>MathWorks</emp:employerName>
+        <emp:employerAddress>
+            Kista
+            Stockholm
+        </emp:employerAddress>
+        <emp:position>Engineer</emp:position>
+        <emp:startDate>2011-01-10</emp:startDate>
+        <emp:endDate>2012-01-10</emp:endDate>
+    </emp:employer>
+    <emp:employer>
+        <emp:employerName>Volvo</emp:employerName>
+        <emp:employerAddress>
+            Kista
+            Stockholm
+        </emp:employerAddress>
+        <emp:position>Programmer</emp:position>
+        <emp:skills>
+            <emp:skillName>C++</emp:skillName>
+            <emp:proficiency>7</emp:proficiency>
+        </emp:skills>
+        <emp:skills>
+            <emp:skillName>C#</emp:skillName>
+            <emp:proficiency>8</emp:proficiency>
+        </emp:skills>
+        <emp:skills>
+            <emp:skillName>Java</emp:skillName>
+            <emp:proficiency>9</emp:proficiency>
+        </emp:skills>
+        <emp:startDate>2012-01-10</emp:startDate>
+        <emp:endDate>2017-01-10</emp:endDate>
+    </emp:employer>
+</emp:employmentRecord>

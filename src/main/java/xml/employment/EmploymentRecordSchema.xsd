@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.hm1.org/schema/EmploymentRecordSchema"
+            xmlns:tns="http://xml.hm1.org/schema/EmploymentRecordSchema" elementFormDefault="qualified">
+
+    <xsd:element name="employmentRecord">
+        <xsd:complexType>
+            <xsd:sequence>
+                
+                <xsd:element name="fullEmployeeName">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="1" />
+                            <xsd:maxLength value="50" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="personalId">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="[0-9]{8}-[0-9]{4}" /><!-- it can be also \d{8}-\d{4} -->
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="gender">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="male|female"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="age">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:integer">
+                            <xsd:minInclusive value="18" />
+                            <xsd:maxInclusive value="65" />
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="address">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                
+                <xsd:element name="phone" type="xsd:nonNegativeInteger" />
+                
+                <xsd:element name="emailAddress">
+                    <xsd:simpleType> 
+                        <xsd:restriction base="xsd:string"> 
+                            <xsd:pattern value="[^@]+@[^\.]+\..+"/> 
+                        </xsd:restriction> 
+                    </xsd:simpleType>    
+                </xsd:element>
+                
+                <xsd:element name="employer" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="employerName" type="xsd:string" />
+                            <xsd:element name="employerAddress">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:whiteSpace value="replace"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="position" type="xsd:string" />
+                            <xsd:element name="skills" minOccurs="0" maxOccurs="25">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="skillName" type="xsd:string" />
+                                        <xsd:element name="proficiency">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:integer">
+                                                    <xsd:minInclusive value="1" />
+                                                    <xsd:maxInclusive value="10" />
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="startDate" type="xsd:date" />
+                            <xsd:element name="endDate" type="xsd:date" />
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<companyInfo xmlns="http://xml.hm1.org/schema/CompanyInfoSchema">
+    <company>
+        <name>MathWorks</name>
+        <role>Engineering</role>
+        <address>
+            Kista
+            Stockholm
+        </address>
+        <phone>46739911555</phone>
+    </company>
+    <company>
+        <name>Volvo</name>
+        <role>Car Manufacturing</role>
+        <address>
+            Kista
+            Stockholm
+        </address>
+        <phone>46739911555</phone>
+    </company>
+    <company>
+        <name>Saab</name>
+        <role>Jet manufatcuring</role>
+        <address>Kista, Stockholm</address>
+        <phone>46701111111</phone>
+    </company>
+</companyInfo>

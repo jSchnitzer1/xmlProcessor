@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><new_emp:employmentRecord xmlns:new_emp="http://xml.hm1.org/schema/EmploymentRecordSchema"><new_emp:fullEmployeeName>khaled shuang</new_emp:fullEmployeeName><new_emp:personalId>19990101-1111</new_emp:personalId><new_emp:gender>male</new_emp:gender><new_emp:age>25</new_emp:age><new_emp:address>
+        Kista Galleria
+        Stockholm</new_emp:address><new_emp:phone>46739911555</new_emp:phone><new_emp:emailAddress>myemail@domain.com</new_emp:emailAddress><new_emp:employer><new_emp:employerName>Volvo</new_emp:employerName><new_emp:employerAddress>
+            Kista
+            Stockholm</new_emp:employerAddress><new_emp:position>Programmer</new_emp:position><new_emp:skills><new_emp:skillName>C++</new_emp:skillName><new_emp:proficiency>7</new_emp:proficiency></new_emp:skills><new_emp:skills><new_emp:skillName>C#</new_emp:skillName><new_emp:proficiency>8</new_emp:proficiency></new_emp:skills><new_emp:skills><new_emp:skillName>Java</new_emp:skillName><new_emp:proficiency>9</new_emp:proficiency></new_emp:skills><new_emp:startDate>2012-01-10</new_emp:startDate><new_emp:endDate>2017-01-10</new_emp:endDate></new_emp:employer><new_emp:employer><new_emp:employerName>MathWorks</new_emp:employerName><new_emp:employerAddress>
+            Kista
+            Stockholm</new_emp:employerAddress><new_emp:position>Engineer</new_emp:position><new_emp:startDate>2011-01-10</new_emp:startDate><new_emp:endDate>2012-01-10</new_emp:endDate></new_emp:employer></new_emp:employmentRecord>

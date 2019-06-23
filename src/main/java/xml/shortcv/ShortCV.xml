@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- using the default namespace material -->
+
+<m:material  id="1" submitted="2017-01-01"
+             xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+             xmlns:m='http://xml.hm1.org/schema/ShortCV'
+             xsi:schemaLocation='http://xml.hm1.org/schema/ShortCV ShortCVSchema.xsd'>
+
+    <!-- Short CV -->
+    <m:cv>
+        <m:name>John Smith</m:name>
+        <m:gender>male</m:gender>
+        <m:address>848 Abbott Road, Stillfield, CT 08888</m:address>
+        <m:tel>999-999-999</m:tel>
+        <m:email>jsmith@abcd.com</m:email>
+        <m:website>jsmith.com</m:website>
+
+        <m:qualification>
+            <m:skill>C; C++; Java; C#.NET; SQL</m:skill>
+            <m:skill>Speaking, Writing, Design</m:skill>
+        </m:qualification>
+    </m:cv>
+
+    <!-- Motivation letter -->
+    <m:letter>
+        Hi there, I’m Smith. I am a Consultant Front-end Architect, designer,
+        developer, writer and speaker from the UK.
+    </m:letter>
+
+    <!-- Job preferences -->
+    <m:preference>
+        <m:desirePlace>Stockholm</m:desirePlace>
+        <m:jobType>Permanent</m:jobType>
+    </m:preference>
+
+
+</m:material>

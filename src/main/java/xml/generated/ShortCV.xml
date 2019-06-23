@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<material xmlns="http://xml.hm1.org/schema/ShortCV" id="1" submitted="2017-01-01">
+    <cv>
+        <name>John Smith</name>
+        <gender>male</gender>
+        <address>848 Abbott Road, Stillfield, CT 08888</address>
+        <tel>999-999-999</tel>
+        <email>jsmith@abcd.com</email>
+        <website>jsmith.com</website>
+        <qualification>
+            <skill>C; C++; Java; C#.NET; SQL</skill>
+            <skill>Speaking, Writing, Design</skill>
+        </qualification>
+    </cv>
+    <letter>
+        Hi there, I’m Smith. I am a Consultant Front-end Architect, designer,
+        developer, writer and speaker from the UK.
+    </letter>
+    <preference>
+        <desirePlace>Stockholm</desirePlace>
+        <jobType>Permanent</jobType>
+    </preference>
+</material>

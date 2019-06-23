@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.hm1.org/schema/ApplicantProfileSchema"
+            xmlns:tns="http://xml.hm1.org/schema/ApplicantProfileSchema" elementFormDefault="qualified">
+
+    <xsd:annotation>
+        <xsd:documentation xml:lang="en">Schema for applicant profile. </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="profile">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="cv">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="xsd:string"/>
+                            <xsd:element name="age" type="xsd:positiveInteger"/>
+                            <xsd:element name="tel" minOccurs="0">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="\d+"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="email" minOccurs="0">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="[^@]+@[^\.]+\..+"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="address" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="qualifications">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="skill" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="education">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="eduItem" minOccurs="1" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="degree" type="xsd:string"/>
+                                        <xsd:element name="school" type="xsd:string"/>
+                                        <xsd:element name="enrollDate" type="xsd:date"/>
+                                        <xsd:element name="graduationDate" type="xsd:date"/>
+                                        <xsd:element name="GPA" type="xsd:float"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="career">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="careerItem" minOccurs="1" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="company">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="companyName" type="xsd:string"/>
+                                                    <xsd:element name="companyLocation" type="xsd:string"/>
+                                                    <xsd:element name="companyTel" type="xsd:string"/>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="position" type="xsd:string"/>
+                                        <xsd:element name="startDate" type="xsd:date"/>
+                                        <xsd:element name="endDate" type="xsd:date"/>
+                                        <xsd:element name="description" type="xsd:string" minOccurs="0"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="letter" type="xsd:string" minOccurs="0">
+                </xsd:element>
+
+                <xsd:element name="preference">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="desirePlace" type="xsd:string"/>
+                            <xsd:element name="jobType">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="permanent|intern|summerjob"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
